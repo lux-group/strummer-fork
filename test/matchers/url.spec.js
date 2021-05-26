@@ -39,6 +39,5 @@ describe('url matcher', function() {
 
   it('coerces to a URL object', function() {
     new url().safeParse('https://github.com/Tabcorp/strummer').value.should.eql(new URL('https://github.com/Tabcorp/strummer'));
-    new url({ coerce: false }).safeParse('https://github.com/Tabcorp/strummer').value.should.eql('https://github.com/Tabcorp/strummer');
   })
 });

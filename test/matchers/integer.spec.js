@@ -99,9 +99,4 @@ describe('integer matcher', function() {
   it('coerces the value to an integer', function() {
     integer({ parse: true, max: 100 }).safeParse('50').should.eql({ value: 50, errors: []});
   });
-
-  it('does not coerce when coerce is set to false', function() {
-    integer({ parse: true, max: 100, coerce: false }).safeParse('50').should.eql({ value: '50', errors: []});
-  });
-
 });
