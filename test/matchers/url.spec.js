@@ -36,8 +36,4 @@ describe('url matcher', function() {
       description: 'Lorem ipsum'
     });
   });
-
-  it('coerces to a URL object', function() {
-    new url().safeParse('https://github.com/Tabcorp/strummer').value.should.eql(new URL('https://github.com/Tabcorp/strummer'));
-  })
 });
