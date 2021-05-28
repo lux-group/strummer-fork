@@ -154,6 +154,23 @@ You can make a field optional by using the special `{optional: true}` argument.,
 new s.number({optional: true, min: 1})
 ```
 
+## Parsing
+
+By using the `{parse: true}` argument, you can tell Strummer that you're happy for
+it to try to parse the value to the expected type before validating it. For example:
+
+```js
+new s.number({parse: true}).match("42") // returns [] i.e. no errors
+```
+
+You can also use the `safeParse` method to return the valid parsed value:
+
+```js
+new s.number().safeParse(42) // returns { value: 42, errors: [] }
+```
+
+Note that the `parse` argument is not required in this case.
+
 ## Defining custom matchers
 
 To define a customer matcher, simply inherit the `s.Matcher` prototype
