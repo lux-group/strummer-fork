@@ -1,3 +1,4 @@
+/* eslint-disable no-undefined */
 require('../../lib/strummer');
 var array  = require('../../lib/matchers/array');
 var bool  = require('../../lib/matchers/boolean');
