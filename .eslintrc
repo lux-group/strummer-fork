@@ -8,7 +8,6 @@ parserOptions:
 
 rules:
   comma-style: [2, "last"]
-  comma-dangle: [2, "only-multiline"]
   default-case: 2
   func-style: [2, "declaration"]
   no-floating-decimal: 2
